@@ -18,6 +18,9 @@
         "react"
     ],
     "rules": {
-        "react/react-in-jsx-scope": "off"
+        "react/react-in-jsx-scope": "off",
+        "react/button-has-type": "off",
+        "eact/jsx-filename-extension": "off",
+        "import/prefer-default-export" : "off"
     }
 }

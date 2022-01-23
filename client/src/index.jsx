@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './Components/App/';
-import {createGlobalStyle} from "styled-components";
+import { createGlobalStyle } from 'styled-components';
+import App from './Components/App';
 
 const GlobalStyle = createGlobalStyle`
 *{
@@ -10,12 +10,12 @@ const GlobalStyle = createGlobalStyle`
   list-style: none;
   box-sizing: border-box;
 }
-`
+`;
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
-    <GlobalStyle/>
+    <GlobalStyle />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );

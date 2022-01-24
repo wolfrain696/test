@@ -1,5 +1,7 @@
 import axios from 'axios';
 
-const host = 'http://localhost:3000/';
+const api = 'http://localhost:3000/';
 
-export const GetProducts = () => axios.get(`${host}products?_limit=10&_page=0`);
+export const GetProducts = (field) => axios.get(`${api}${field}`);
+
+export const SendCheck = (body) => axios.post(`${api}writingOff`, body);
